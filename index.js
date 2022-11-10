@@ -41,12 +41,12 @@ app.use(expressSession({
 
 // mongoose.connect('mongodb://localhost/my_database',{useNewUrlParser:true})
 mongoose.connect('mongodb+srv://bpadros:Rifle37504317@cluster2.sugglgz.mongodb.net/test',{useNewUrlParser:true})
-// const validateMiddleWare = (req,res,next) =>{
-//     if(req.files == null || req.body.title == null){
-//         return res.redirect('/posts/new')
-//     }
-//     next()
-// }
+const validateMiddleWare = (req,res,next) =>{
+    if(req.files == null || req.body.title == null){
+        return res.redirect('/posts/new')
+    }
+    next()
+}
 const newPostController = require('./controllers/newPost')
 
 

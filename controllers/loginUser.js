@@ -10,6 +10,7 @@ module.exports = (req,res) => {
                     req.session.userId = user._id
                     //if passwords match
                     //store user session, will talk about it later
+                    
                     res.redirect('/')
                 }
                 else{

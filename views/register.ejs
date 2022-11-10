@@ -25,7 +25,7 @@
                         <%if (errors != null && errors.length > 0){%>
                             <ul class="list-group"></ul>
                            <%for (var i= 0;i < errors.length;i++){%>
-                            <li class="list-group-item list-group-item-danger"><%=errors[i]%></li>
+                            <li class="list-group-item list-group-item-danger m-3" style="border-radius: 15px"><%=errors[i]%></li>
                             <%}%>
                         </ul>
                         <%}%>
@@ -33,19 +33,19 @@
                                 <div class="control-group">
                                     <div class="form-group floating-label-form-group controls">
                                       <label>User Name</label>
-                                      <input type="text" class="form-control" placeholder="User Name" id="username" name="username" value="<%= username %>">              
+                                      <input type="text" class="form-control" placeholder="User Name" id="username" name="username" value="<%= username %>" style="border-radius: 15px">              
                                     </div>
                                   </div>
 
                                   <div class="control-group">
                                     <div class="form-group floating-label-form-group controls">
-                                      <label>Passwrod</label>
-                                      <input type="password" class="form-control" placeholder="Password" id="password" name="password" value="<%= password %>">              
+                                      <label>Password</label>
+                                      <input type="password" class="form-control" placeholder="Password" id="password" name="password" value="<%= password %>" style="border-radius: 15px">              
                                     </div>
                                   </div>
                                 <br />
-                                <div class="control-group">
-                                <button class="btn btn-primary" id="sendMessageButton" type="submit">Register</button>
+                                <div class="control-group text-center">
+                                <button class="btn btn-primary" style="border-radius: 15px" id="sendMessageButton" type="submit">Register</button>
                             </div>
                             </form>
                         </div>
@@ -53,41 +53,7 @@
                 </div>
             </div>
         </main>
-        <!-- Footer-->
-        <!-- <footer class="border-top">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
-                    </div>
-                </div>
-            </div> -->
+        
             <%-include('layouts/footer.ejs');-%>
             <!-- Bootstrap core JS-->
             <%-include('layouts/scripts.ejs');-%>

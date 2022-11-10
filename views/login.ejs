@@ -22,32 +22,26 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+                        <p class="text-center">Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
                         <div class="my-5">
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
+                            
                             <form action="/users/login" method="POST" enctype="multipart/form-data">
                                 <div class="control-group">
                                     <div class="form-group floating-label-form-group controls">
                                       <label>User Name</label>
-                                      <input type="text" class="form-control" placeholder="User Name" id="username" name="username">              
+                                      <input type="text" class="form-control" placeholder="User Name" id="username" name="username" style="border-radius: 15px">              
                                     </div>
                                   </div>
 
                                   <div class="control-group">
                                     <div class="form-group floating-label-form-group controls">
-                                      <label>Passwrod</label>
-                                      <input type="password" class="form-control" placeholder="Password" id="password" name="password">              
+                                      <label>Password</label>
+                                      <input type="password" class="form-control" placeholder="Password" id="password" name="password" style="border-radius: 15px">              
                                     </div>
                                   </div>
                                 <br />
-                                <div class="control-group">
-                                <button class="btn btn-primary" id="sendMessageButton" type="submit">Login</button>
+                                <div class="control-group text-center">
+                                <button class="btn btn-primary" style="border-radius: 15px" id="sendMessageButton" type="submit">Login</button>
                             </div>
                             </form>
                         </div>
@@ -56,40 +50,7 @@
             </div>
         </main>
         <!-- Footer-->
-        <footer class="border-top">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
-                    </div>
-                </div>
-            </div>
+      
             <%-include('layouts/footer.ejs');-%>
             <!-- Bootstrap core JS-->
             <%-include('layouts/scripts.ejs');-%>

@@ -7,6 +7,8 @@ const mongoose = require('mongoose')
 const fileUpload = require('express-fileupload')
 const flash = require('connect-flash')
 
+const contactController = require('./controllers/contact')
+const aboutController = require('./controllers/about')
 const homeController = require('./controllers/home')
 const storePostController = require('./controllers/storePost')
 const getPostController = require('./controllers/getPost')
@@ -53,8 +55,8 @@ const newPostController = require('./controllers/newPost')
 
 app.use('/posts/store',validateMiddleWare)
 
-
-
+app.get('/contact',contactController)
+app.get('/about',aboutController)
 app.get('/posts/new',newPostController)
 app.get('/',homeController)
 app.get('/post/:id',getPostController)

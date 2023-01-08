@@ -14,9 +14,11 @@ This is a web application to post news and articles about everything you want to
 
 ### This site was built with:
 
-+ Node.js
++ Back-end : Node.js
 
-+ Ejs
++ Front-end : Ejs
+
++ Database : Mongoose
 
 ## Installation
 

@@ -2,7 +2,7 @@
 
 ![news-blog-body](https://user-images.githubusercontent.com/88162913/211204864-b36ce16a-b0f3-411b-bca1-a3730f891800.png)
 
-[https://theblog-tgfy.onrender.com]
+[THE-NEWS-BLOG](https://theblog-tgfy.onrender.com)
 
 This is a web application to post news and articles about everything you want to write!
 
